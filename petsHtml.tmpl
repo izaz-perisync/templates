@@ -1,0 +1,16 @@
+<p><strong>Pets:</strong> {{ . | len }}</p>
+{{ range . }}
+<hr />
+<dl>
+
+        <dt>Name</dt>
+        <dd>&lt;script&gt;alert(&#34;Gotcha!&#34;);&lt;/script&gt;Jujube</dd>
+        <dt>Sex</dt>
+        <dd>Female (spayed)</dd>
+        <dt>Age</dt>
+        <dd>10 months</dd>
+        <dt>Breed</dt>
+        <dd>German Shepherd &amp; Pit Bull</dd>
+
+</dl>
+{{ end }}
