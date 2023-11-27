@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill</title>
+    <style>
+        body {
+            width: 21cm;
+             
+            margin: 0 auto;
+            padding: 0.75cm;
+            box-sizing: border-box;
+            line-height: 1.5;
+            font-family: "Tahoma" !important;
+            font-size: 10pt;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+        }
+
+        .head-sec {
+            text-align: center;
+            display: flex;
+        }
+
+        .admin {
+            display: flex;
+            flex: 1.5;
+            flex-direction: column;
+            align-items: start;
+        }
+
+        .admin div p {
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 0px !important;
+        }
+
+        .gst {
+            display: flex;
+        }
+
+        .invoice div {
+            display: flex;
+            font-size: 13px;
+            justify-content: space-between;
+
+        }
+
+        h3 {
+            margin: 0px !important;
+        }
+
+
+
+        .acc-sec {
+            display: flex;
+            flex-direction: column;
+            margin: 0px;
+        }
+
+        .acc-sec p {
+            margin-bottom: 1px;
+        }
+
+        .slabRates-sec {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .meterCon-sec {
+            display: flex;
+
+            flex: 1;
+            flex-direction: column;
+        }
+
+        .chargeSummary-sec {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .note-sec {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+
+        .gst {
+            display: flex;
+        }
+
+        .total {
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .gst div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+
+        }
+
+        .footer {
+            display: flex;
+
+            align-items: flex-end;
+        }
+
+        table {
+
+            margin: 0px !important;
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        .table-a {
+            width: 30%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            margin-right: 10px !important;
+            margin-bottom: 5px !important;
+
+        }
+
+        .table-b {
+            width: 50%;
+            margin-top: 20px;
+            margin-bottom: 5px !important;
+            border-collapse: collapse;
+        }
+
+        .note-break {
+            display: flex;
+            flex: 1;
+
+        }
+
+        .point {
+            display: flex;
+             
+        }
+
+        .desc {
+            display: flex;
+             
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 5px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .projectname,
+        .acc-header {
+            font-weight: bolder;
+        }
+
+        .total-cost {
+            display: flex;
+            align-items: center;
+        }
+        .gst-charge{
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="head-sec">
+        <div class="admin">
+            <div>
+                <p class="projectname">BuildingA</p>
+            </div>
+            <div>
+                <p>Izaz</p>
+            </div>
+            <div>
+                <p>12345566</p>
+            </div>
+            <div>
+                <p>shaikIzaz</p>
+            </div>
+            <div>
+                <p>123444</p>
+            </div>
+            <div>
+                <p>GstPin: 1234</p>
+            </div>
+        </div>
+        <div class="invoice">
+            <div>
+                <p>Invoice</p>
+                <p>1</p>
+            </div>
+            <div>
+                <p>Generated Date:</p>
+                <p>2023-11-27</p>
+            </div>
+            <div>
+                <p>DueDate:</p>
+                <p> 2023-11-27</p>
+            </div>
+
+            <div>
+                <p>Amount:</p>
+                
+                <p>5592</p>
+                
+
+            </div>
+
+
+        </div>
+    </div>
+    <div class="acc-sec">
+        <div>
+            <p class="acc-header">Account Details</p>
+        </div>
+        <div>
+            <p>shaik</p>
+        </div>
+        <div>
+            <p>shaik@1123.com</p>
+        </div>
+        <div>
+            <p>9199112</p>
+        </div>
+        <div>
+            <p>
+            <p>btm, banglore, india
+                12345</p>
+            </p>
+        </div>
+
+    </div>
+
+    <div class="slabRates-sec">
+        <table class="table-a">
+            <th>SlabRates:</th>
+            <tr>
+                <th>Litres</th>
+                <th>Rate</th>
+            </tr>
+            
+            <tr>
+                <td>12</td>
+                <td>233</td>
+            </tr>
+            
+            <tr>
+                <td>12</td>
+                <td>233</td>
+            </tr>
+            
+
+        </table>
+        <table class="table-b">
+            <th>MeterReadings</th>
+            <tr>
+                <th>Serial No</th>
+                <th>Previous Reading</th>
+                <th>CurrentReading</th>
+                <th>Difference</th>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>1234</td>
+                <td>456</td>
+                <td>778</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>1234</td>
+                <td>456</td>
+                <td>778</td>
+            </tr>
+            
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Total</td>
+                <td>1556</td>
+            </tr>
+        </table>
+
+
+    </div>
+
+    <div class="chargeSummary-sec">
+
+        <table>
+            <th>Charge Summary</th>
+            <tr>
+                <th>Litres</th>
+                <th>Rate</th>
+                <th>Charge</th>
+            </tr>
+            
+            <tr>
+                <td>12</td>
+                <td>233</td>
+                <td>2796</td>
+
+            </tr>
+            
+            <tr>
+                <td>12</td>
+                <td>233</td>
+                <td>2796</td>
+
+            </tr>
+            
+            <tr>
+                <td></td>
+                <td>Total</td>
+                <td>5592</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="gst-charge">
+        <div>
+            <h3>TotalCharge</h3>
+        </div>
+        <div>
+            <p style="font-size: 13px;font-weight: bolder;margin-left: 10px !important;">5592</p>
+        </div>
+    </div>
+    
+
+
+    <div class="note-sec">
+
+        <div>
+            <h3>Note</h3>
+        </div>
+        <div class="note-desc">
+
+            
+            <div class="note-break">
+
+                <div class="point">
+                    <p>1.</p>
+                </div>
+                <div class="desc">
+                    
+                    <p>array of json</p>
+                    
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+    <div class="footer">
+        <p>Powered by thewaterFirm</p>
+    </div>
+
+</body>
+
+</html>
