@@ -15,6 +15,7 @@ type Slab struct {
 type Note struct {
 	Note string `json:"note"`
 }
+// Bill struct includes the fields required in the get method
 type Bill struct {
 	ProjectName           string
 	Invoice               int64
